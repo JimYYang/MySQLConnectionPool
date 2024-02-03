@@ -1,0 +1,30 @@
+# 忽略 Visual Studio 临时文件和目录
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# 忽略 Visual Studio 用户文件
+*.user
+*.userosscache
+*.suo
+*.opensdf
+*.sdf
+
+# 忽略 C++ 编译生成的文件
+*.o
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.aps
+*.pch
+*.idb
+*.ipch
+*.res
+
