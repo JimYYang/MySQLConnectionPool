@@ -143,6 +143,9 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="public.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="mysql.ini" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
