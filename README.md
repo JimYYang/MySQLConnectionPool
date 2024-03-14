@@ -24,7 +24,7 @@
 
 2. 从`ConnectionPool`中可以获取和MySQL的连接`Connection`` 
 
-3. 空闲连接`Connection全部维护在一个**线程安全**的`Connection队列`中，**使用线程互斥锁保证队列的线程安全**
+3. 空闲连接`Connection`全部维护在一个**线程安全**的`Connection队列`中，**使用线程互斥锁保证队列的线程安全**
  
 4. 如果`Connection`队列为空，还需要再获取连接，此时需要动态创建连接，上限数量是`maxSize ``
 
