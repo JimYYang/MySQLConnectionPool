@@ -22,11 +22,11 @@
 连接池主要包含了以下功能点：
 1. 连接池只需要一个实例，所以`ConnectionPool`以**单例模式**进行设计
 
-2. 从`ConnectionPool`中可以获取和MySQL的连接`Connection`` 
+2. 从`ConnectionPool`中可以获取和MySQL的连接`Connection`
 
 3. 空闲连接`Connection`全部维护在一个**线程安全**的`Connection队列`中，**使用线程互斥锁保证队列的线程安全**
  
-4. 如果`Connection`队列为空，还需要再获取连接，此时需要动态创建连接，上限数量是`maxSize ``
+4. 如果`Connection`队列为空，还需要再获取连接，此时需要动态创建连接，上限数量是`maxSize `
 
 5. 队列中空闲连接时间超过`maxIdleTime`的就要被释放掉，只保留初始的`initSize`个连接即可，这个能点需要放在独立的线程中去做 
 
